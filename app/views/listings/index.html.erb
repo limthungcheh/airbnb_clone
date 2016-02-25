@@ -1,0 +1,31 @@
+<h1>Listings#index</h1>
+<p>Find me in app/views/listings/index.html.erb</p>
+
+
+
+<%@listings.each do |listing|%>
+<table>
+	<tr>
+		<th>Country</th>
+		<th>Name</th>
+		<th>Room type</th>
+		<th>Price</th>
+		<th>Occupants</th>
+		<th>Days of stay</th>
+	</tr>
+	<tr>
+		<th><%=listing.country%></th>
+		<th><%=listing.name%></th>
+		<th><%=listing.room_type%></th>
+		<th><%=listing.price%></th>
+		<th><%=listing.number_of_occupants%></th>
+		<th><%=listing.number_of_days%></th>
+	</tr>
+</table>
+
+<%end%>
+
+
+
+
+
